@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+
+</head>
+<body id="footnote">
+<table cellspacing="1" cellpadding="0" bgcolor="#FFFFFF">
+  <tr>
+    <td style="background-image:url(<{$xoops_imageurl}>images/h_bg.gif);height:150px;">
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="285"><a href="<{$xoops_url}>"><img src="<{$xoops_imageurl}>images/logo.gif" alt="logo" align="middle" /></a></td>
+          <td width="100%" align="center"><div style="text-align: center; padding-top: 5px;">&nbsp;</div></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td class="nav"><MARQUEE>NICE TO MEET YOU ! Make your own menu (navigation bar) or something on this place...</MARQUEE></td></tr>
+  <tr>
+    <!--<td bgcolor="#2D303F"> -->
+    <td bgcolor="#000000">
+      <table cellspacing="2" cellpadding="0">
+        <tr>
+<td width="200">
+<!-- Start left blocks loop -->
+
+<{foreach item=block from=$xoops_lblocks}>
+<table cellspacing="0" cellpadding="2" id="main">
+<tr>
+<td class="blockTitle2">&nbsp;<{$block.title}></td>
+</tr>
+<tr>
+<td class="blockContent2"><{$block.content}></td>
+</tr>
+</table><br />
+<{/foreach}>
+<!-- End left blocks loop -->
+
+</td>
+          <td style="padding:5px" align="center">
+          <!-- Display center blocks if any -->
+            <{if $xoops_showcblock == 1}>
+
+            <table cellspacing="0">
+              <tr>
+                <td width="100%" colspan="2">
+
+                <!-- Start center-center blocks loop -->
+                  <{foreach item=block from=$xoops_ccblocks}>
+                  <table cellspacing="1" cellpadding="5" bgcolor="#929BBA">
+                    <tr> 
+                      <td class="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td class="blockContent3"><p align=center><img src="<{$xoops_imageurl}>images/line.gif" alt="" /></p><{$block.content}></td>
+                    </tr>
+                  </table><br />
+                  <{/foreach}>
+                <!-- End center-center blocks loop -->
+
+                </td>
+              </tr>
+              <tr>
+                <td width="50%">
+
+                <!-- Start center-left blocks loop -->
+                  <{foreach item=block from=$xoops_clblocks}>
+                  <table cellspacing="1" cellpadding="5">
+                    <tr> 
+                      <td class="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td class="blockContent3"><{$block.content}></td>
+                    </tr>
+                  </table><br />
+                  <{/foreach}>
+                <!-- End center-left blocks loop -->
+
+                </td><td width="50%">
+
+                <!-- Start center-right blocks loop -->
+                  <{foreach item=block from=$xoops_crblocks}>
+                  <table cellspacing="1" cellpadding="5">
+                    <tr> 
+                      <td class="blockTitle">&nbsp;<{$block.title}></td>
+                    </tr>
+                    <tr>
+                      <td class="blockContent3"><{$block.content}></td>
+                    </tr>
+                  </table><br />
+                  <{/foreach}>
+                <!-- End center-right blocks loop -->
+
+                </td>
+              </tr>
+            </table>
+
+            <{/if}>
+            <!-- End display center blocks -->
+
+            <div id="content">
+              <{$xoops_contents}>
+            </div>
+          </td>
+        
+          <{if $xoops_showrblock == 1}>
+	      <td width=246 align=center bgcolor=#000000 style="padding:4px"><br>
+          <!-- Start right blocks loop -->
+          
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/dolph-c1.gif);"></td><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/u.gif);background-repeat:repeat-x;"><img src="<{$xoops_imageurl}>images/dolph-a.gif" alt="hello" align="middle" /></td><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/dolph-c2.gif);"></td></tr>
+<tr><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/l.gif);background-repeat:repeat-y;"></td><td>          
+          
+            <{foreach item=block from=$xoops_rblocks}>
+            <table cellspacing="0" cellpadding="2">
+              <tr>
+                <td class="blockTitle">&nbsp;<{$block.title}></td>
+              </tr>
+              <tr>
+                <td class="blockContent"><{$block.content}></td>
+              </tr>
+            </table>
+                       <{/foreach}>
+          <!-- End right blocks loop -->
+          
+     </td><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/r.gif);background-repeat:repeat-y;"></td></tr>
+<tr><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/dolph-c3.gif);"></td><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/un.gif);background-repeat:repeat-x;"></td><td style="width:30px;height:50px;background-image:url(<{$xoops_imageurl}>images/dolph-c4.gif);"></td></tr>
+</table>     
+          
+          <{/if}>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="30" valign="middle" align="center" style="background-image:url(<{$xoops_imageurl}>images/f_bg.jpg)"><div style="text-align: center; padding-top: 2px; font-size: 10px;color:666666;"><{$xoops_footer}><br>Images by <a href="http://sozai.noppo.ne.jp/" target="_blank">そざいの広場</a> :: &copy; 2003 <a href="http://i-you.org" target="_blank">ImageSquare</a></div></td>
+  </tr>
+</table>
+</body>
+</html>
